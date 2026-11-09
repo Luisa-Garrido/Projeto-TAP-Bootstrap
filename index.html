@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Entrelinhas: Livros que já li ou quero ler. Projeto em Bootstrap 5.">
+  <title>Entrelinhas | Histórias entre linhas</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="assets/css/styles.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"
+    defer></script>
+  <script src="assets/js/script.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <div class="announcement text-center py-2 px-3">Um encontro entre você e sua próxima história.</div>
+
+  <header class="sticky-top">
+    <!-- Componente 1: navbar com menu colapsável nativo do Bootstrap. -->
+    <nav class="navbar navbar-expand-lg" aria-label="Navegação principal">
+      <div class="container py-2">
+        <a class="navbar-brand" href="#inicio"><span class="brand-icon" aria-hidden="true">e.</span> entrelinhas<span
+            class="brand-subtitle">LIVRARIA & ENCONTROS</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+          aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir ou fechar menu"><span
+            class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+            <li class="nav-item"><a class="nav-link" href="#destaques">Destaques</a></li>
+            <li class="nav-item"><a class="nav-link" href="#estante">Nossa estante</a></li>
+            <li class="nav-item"><a class="nav-link" href="#catalogo">Catálogo</a></li>
+            <li class="nav-item"><a class="btn btn-brand ms-lg-3" href="#contato">Fale conosco <span
+                  aria-hidden="true">↗</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <main id="conteudo">
+    <section id="inicio" class="hero section-space">
+      <div class="container">
+        <div class="row align-items-center gy-5">
+          <div class="col-lg-6 pe-lg-5">
+            <p class="eyebrow"><span aria-hidden="true">✳</span> PARA QUEM GOSTA DE LER</p>
+            <h1>Existem mundos<br>inteiros <em>entre<br>as linhas.</em></h1>
+            <p class="hero-copy mt-4">Histórias que acolhem, ideias que provocam e livros que ficam com você. Encontre
+              sua próxima leitura.</p>
+            <a class="btn btn-brand btn-lg mt-3" href="#estante">Explore minha estante <span
+                aria-hidden="true">↗</span></a>
+            <div class="hero-note mt-4"><span class="note-line" aria-hidden="true"></span> Uma curadoria feita com
+              cuidado.</div>
+          </div>
+
+
+          <div class="col-lg-6">
+            <!-- Componente 2: três slides, indicadores e controles, sem autoplay. -->
+            <div id="destaques" class="carousel slide book-carousel" role="region" aria-roledescription="carrossel"
+              aria-label="Leituras em destaque">
+              <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                  <div class="feature-slide slide-green"><span class="slide-kicker">ESCOLHA DA CURADORIA / 01</span><img
+                      src="assets/img/capa1.jpg" width="260" height="360"
+                      alt="Capa de Biblioteca da meia-noite, de Matt Haig">
+                    <div class="slide-caption"><span>Para imaginar outras possibilidades</span><strong>Uma
+                        biblioteca.<br>Infinitas histórias.</strong></div><span class="decor-star"
+                      aria-hidden="true">✳</span>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="feature-slide slide-rose"><span class="slide-kicker">ESCOLHA DA CURADORIA / 02</span><img
+                      src="assets/img/capa2.jpg" width="260" height="360" alt="Capa de A empregada, de Freida McFadden">
+                    <div class="slide-caption"><span>Para quem gosta de suspense</span><strong>O livro que<br>inspirou
+                        o filme.</strong></div><span class="decor-star" aria-hidden="true">✳</span>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="feature-slide slide-gold"><span class="slide-kicker">ESCOLHA DA CURADORIA / 03</span><img
+                      src="assets/img/capa3.jpg" width="260" height="360"
+                      alt="Capa de A garota do lago, de Charlie Donlea">
+                    <div class="slide-caption"><span>Para quem gosta de mistérios</span><strong>Apenas
+                        um acidente?<br>Talvez não.</strong></div><span class="decor-star" aria-hidden="true">✳</span>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="carousel-indicators"><button type="button" data-bs-target="#destaques" data-bs-slide-to="0"
+                  class="active" aria-current="true" aria-label="Destaque 1"></button><button type="button"
+                  data-bs-target="#destaques" data-bs-slide-to="1" aria-label="Destaque 2"></button><button
+                  type="button" data-bs-target="#destaques" data-bs-slide-to="2" aria-label="Destaque 3"></button></div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#destaques" data-bs-slide="prev"><span
+                  aria-hidden="true">←</span><span class="visually-hidden">Destaque anterior</span></button>
+              <button class="carousel-control-next" type="button" data-bs-target="#destaques" data-bs-slide="next"><span
+                  aria-hidden="true">→</span><span class="visually-hidden">Próximo destaque</span></button>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <div class="manifesto">
+      <div class="container d-flex flex-wrap justify-content-between gap-3 py-4"><span>✳ Curadoria com
+          afeto</span><span>✳ Novas perspectivas</span><span>✳ Histórias para compartilhar</span></div>
+    </div>
+
+    <section id="estante" class="section-space">
+      <div class="container">
+
+
+        <div class="d-flex flex-wrap justify-content-between align-items-end gap-3 mb-5">
+          <div>
+            <p class="eyebrow">LEITURAS DO ANO</p>
+            <h2>Qual vai ser sua<br><em>próxima leitura?</em></h2>
+          </div>
+          <p class="section-intro mb-0">Três histórias da nossa estante.<br>Escolha uma e conheça os detalhes.</p>
+        </div>
+
+
+        <!-- Componente 3: cards em grid de uma, duas e três colunas. -->
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+          <div class="col">
+
+            <article class="card h-100">
+              <div class="book-stage stage-green"><span class="badge rounded-pill">A VIDA DE NORA SEED</span><img
+                  src="assets/img/capa1.jpg" alt="Capa de Biblioteca da meia-noite" width="200" height="280"
+                  loading="lazy"></div>
+              <div class="card-body">
+                <p class="book-genre">FANTASIA</p>
+                <h3 class="card-title">Biblioteca da meia-noite</h3>
+                <p class="author">Matt Haig</p>
+                <p class="card-text">Uma leitura de fantasia de Matt Haig para quem gosta de explorar novas
+                  possibilidades.</p>
+                <div class="d-flex justify-content-between align-items-center mt-4"><strong class="price">R$
+                    29,89</strong><button class="btn btn-outline-brand" data-bs-toggle="modal"
+                    data-bs-target="#livroModal" data-livro="biblioteca">Conhecer <span
+                      aria-hidden="true">↗</span></button></div>
+              </div>
+            </article>
+
+
+          </div>
+          <div class="col">
+            <article class="card h-100">
+              <div class="book-stage stage-rose"><span class="badge rounded-pill">INSPIROU O FILME</span><img
+                  src="assets/img/capa2.jpg" alt="Capa de A empregada" width="200" height="280" loading="lazy">
+              </div>
+
+              <div class="card-body">
+                <p class="book-genre">SUSPENSE</p>
+                <h3 class="card-title">A empregada</h3>
+                <p class="author">Freida McFadden</p>
+                <p class="card-text">Um suspense de Freida McFadden para quem procura uma leitura envolvente e cheia de
+                  tensão.</p>
+                <div class="d-flex justify-content-between align-items-center mt-4"><strong class="price">R$
+                    36,95</strong><button class="btn btn-outline-brand" data-bs-toggle="modal"
+                    data-bs-target="#livroModal" data-livro="empregada">Conhecer <span
+                      aria-hidden="true">↗</span></button></div>
+              </div>
+            </article>
+
+          </div>
+          <div class="col">
+            <article class="card h-100">
+              <div class="book-stage stage-gold"><span class="badge rounded-pill">MORTE DE UMA SOCIALITE</span><img
+                  src="assets/img/capa3.jpg" alt="Capa de A garota do lago" width="200" height="280" loading="lazy">
+              </div>
+              <div class="card-body">
+                <p class="book-genre">MISTÉRIO</p>
+                <h3 class="card-title">A garota do lago</h3>  
+                <p class="author">Charlie Donlea</p>
+                <p class="card-text">Um mistério de Charlie Donlea para quem gosta de reunir pistas e buscar respostas.
+                </p>
+                <div class="d-flex justify-content-between align-items-center mt-4"><strong class="price">R$
+                    19,00</strong><button class="btn btn-outline-brand" data-bs-toggle="modal"
+                    data-bs-target="#livroModal" data-livro="garota">Conhecer <span aria-hidden="true">↗</span></button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="catalogo" class="catalog-section section-space">
+      <div class="container">
+        <div class="row gy-4 mb-4 align-items-end">
+          <div class="col-lg-7">
+            <p class="eyebrow">EXPLORE MAIS UM POUCO</p>
+            <h2>Na nossa <em>estante.</em></h2>
+          </div>
+          <div class="col-lg-5"><label for="busca" class="form-label">Encontre um título ou autor</label><input
+              id="busca" class="form-control" type="search" placeholder="O que você quer ler?"></div>
+        </div>
+
+        <!-- Componente 4: tabela listrada dentro de um contêiner com rolagem. -->
+        <div class="table-responsive" role="region"
+          aria-label="Catálogo de livros, role horizontalmente em telas pequenas" tabindex="0">
+          <table class="table table-striped align-middle">
+            <caption>Catálogo com obras e preços reais, disponibilidade fictícia.</caption>
+
+            <thead>
+              <tr>
+                <th scope="col">Livro</th>
+                <th scope="col">Autor(a)</th>
+                <th scope="col">Gênero</th>
+                <th scope="col">Preço</th>
+                <th scope="col">Disponibilidade</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <th scope="row">Biblioteca da meia-noite</th>
+                <td>Matt Haig</td>
+                <td>Fantasia</td>
+                <td class="text-nowrap">R$ 29,89</td>
+                <td><span class="stock">Disponível</span></td>
+              </tr>
+
+              <tr>
+                <th scope="row">A empregada</th>
+                <td>Freida McFadden</td>
+                <td>Suspense</td>
+                <td class="text-nowrap">R$ 36,95</td>
+                <td><span class="stock">Disponível</span></td>
+              </tr>
+
+              <tr>
+                <th scope="row">A garota do lago</th>
+                <td>Charlie Donlea</td>
+                <td>Mistério</td>
+                <td class="text-nowrap">R$ 19,00</td>
+                <td><span class="stock">Disponível</span></td>
+              </tr>
+
+              <tr>
+                <th scope="row">Dom Casmurro</th>
+                <td>Machado de Assis</td>
+                <td>Romance</td>
+                <td class="text-nowrap">R$ 15,00</td>
+                <td><span class="stock">Disponível</span></td>
+              </tr>
+
+              <tr>
+                <th scope="row">Toda poesia</th>
+                <td>Paulo Leminski</td>
+                <td>Poesia</td>
+                <td class="text-nowrap">R$ 54,83</td>
+                <td><span class="stock stock-order">Sob encomenda</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p id="resultadoBusca" class="small mt-2" role="status" aria-live="polite">5 livros no catálogo.</p>
+      </div>
+    </section>
+
+    <section id="contato" class="section-space">
+      <div class="container">
+        <div class="row gy-5 gx-lg-5">
+          <div class="col-lg-5">
+            <p class="eyebrow">FALE COMIGO</p>
+            <h2>Mente inquieta?<br><em>Converse comigo!</em></h2>
+            <p class="mt-4 section-intro">Quer saber mais sobre um livro ou me contar sua próxima leitura? Deixe sua
+              mensagem.</p>
+            <div class="contact-note mt-4"><span aria-hidden="true">✉</span>
+              <p class="mb-0">Este é um projeto acadêmico.<br>O formulário simula um envio; nenhum dado é transmitido ou
+                armazenado.</p>
+            </div>
+          </div>
+          <div class="col-lg-7"><!-- Componente 5: formulário com validação nativa HTML5. -->
+            <form id="contatoForm" class="row g-3">
+              <div class="col-md-6"><label class="form-label" for="nome">Seu nome</label><input class="form-control"
+                  id="nome" name="nome" type="text" autocomplete="name" minlength="2" maxlength="100" required
+                  placeholder="Como podemos chamar você?"></div>
+              <div class="col-md-6"><label class="form-label" for="email">Seu e-mail</label><input class="form-control"
+                  id="email" name="email" type="email" autocomplete="email" maxlength="150" required
+                  placeholder="voce@exemplo.com"></div>
+              <div class="col-12"><label class="form-label" for="assunto">Sobre o que vamos conversar?</label><select
+                  class="form-select" id="assunto" name="assunto" required>
+                  <option value="">Escolha um assunto</option>
+                  <option value="livro">Interesse em um livro</option>
+                  <option value="indicacao">Indicação de leitura</option>
+                  <option value="outro">Outro assunto</option>
+                </select></div>
+              <div class="col-12"><label class="form-label" for="mensagem">Sua mensagem</label><textarea
+                  class="form-control" id="mensagem" name="mensagem" rows="5" minlength="10" maxlength="2000" required
+                  placeholder="Conte um pouquinho para a gente..."></textarea>
+                <div class="form-text">Todos os campos são obrigatórios. Escreva pelo menos 10 caracteres na mensagem.
+                </div>
+              </div>
+              <div class="col-12"><button class="btn btn-brand btn-lg" type="submit">Enviar mensagem <span
+                    aria-hidden="true">↗</span></button></div>
+              <div class="col-12">
+                <div id="formStatus" class="alert alert-success d-none mb-0" role="status" aria-live="polite"
+                  tabindex="-1"></div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="py-5">
+      </div><a href="#inicio" class="footer-link">Voltar ao início ↑</a>
+    </div>
+  </footer>
+  <!-- Componente 6: modal nativo, com foco gerenciado pelo Bootstrap. -->
+  <div class="modal fade" id="livroModal" tabindex="-1" aria-labelledby="modalTitulo" aria-describedby="modalDescricao"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-4" id="modalTitulo">Detalhes do livro</h2><button type="button" class="btn-close"
+            data-bs-dismiss="modal" aria-label="Fechar detalhes"></button>
+        </div>
+        <div class="modal-body">
+          <p id="modalAutor" class="book-genre"></p>
+          <p id="modalDescricao"></p>
+          <p id="modalPreco" class="price fw-bold"></p>
+          <p class="small text-secondary mb-0">Preço ilustrativo para demonstração acadêmica. A ação abaixo preenche o
+            formulário de interesse.</p>
+        </div>
+        <div class="modal-footer"><button type="button" class="btn btn-outline-brand"
+            data-bs-dismiss="modal">Fechar</button><button type="button" class="btn btn-brand" id="interesseLivro">Tenho
+            interesse</button></div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
